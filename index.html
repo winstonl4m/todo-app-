@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <title>To Do List</title>
+</head>
+<body>
+    <header>
+        <h1>ToDo list</h1>
+    </header>
+    <header2>
+        <h3>Enter the task you want to complete into the input field </h3>
+    </header2>
+    <header3>
+        <h3>Click on the checkmark button to finish task</h3>
+    </header3>
+    <header4>
+        <h3>Click on the trash button to delete task</h3>
+    </header4>
+    <form>
+        <input type="text" class ="todo-input">
+        <button class="todo-button" type = "submit">
+            <i class="far fa-plus-square"></i>
+        </button>
+        <div class="select">
+            <select name="todos" class="filter-todo">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="uncompleted">Uncompleted</option>
+            </select>
+        </div>
+        <button class="clearAll-button" type = "submit">
+            <i class="far fa-minus-square"></i>
+        </button>
+    </form>
+    <div class = "todo-container">
+        <ul class="todo-list"></ul>
+    </div>
+    <script src = "./app.js"></script>
+</body>
+</html>
